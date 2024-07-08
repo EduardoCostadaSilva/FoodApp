@@ -4,7 +4,7 @@ export function Header() {
     return (
         <View className="w-full flex flex-row items-center justify-between">
             <Pressable className="w-10 h-10 bg-white rounded-full flex justify-center itemscenter">
-                <Ionicons name="menu" size={20} color="#121212" />
+                <Ionicons name="menu" size={35} color="#121212" />
             </Pressable>
             <View className="flex flex-col items-center justify-center">
                 <Text className="text-center text-sm text-slate-800">Localização</Text>
@@ -14,7 +14,7 @@ export function Header() {
                 </View>
             </View>
             <Pressable className="w-10 h-10 bg-white rounded-full flex justify-center itemscenter">
-                <Feather name="bell" size={20} color="#121212" />
+                <Feather name="bell" size={35} color="#121212" />
             </Pressable>
         </View>
     );
