@@ -10,7 +10,7 @@ export function Restaurants() {
     const [restaurants, setRestaurants] = useState<RestaurantsProps[]>([]);
     useEffect(() => {
         async function getFoods() {
-            const response = await fetch("http://172.26.112.1:3000/restaurants");
+            const response = await fetch("http://172.22.176.1:3000/restaurants");
             const data = await response.json();
             setRestaurants(data);
         }

@@ -15,7 +15,7 @@ export function TrendingFoods() {
     const [foods, setFoods] = useState<FoodProps[]>([]);
     useEffect(() => {
         async function getFoods() {
-            const response = await fetch("http://172.26.112.1:3000/foods");
+            const response = await fetch("http://172.22.176.1:3000/foods");
             const data = await response.json();
             setFoods(data);
         }
